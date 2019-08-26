@@ -1,4 +1,4 @@
-package com.spring.dao;
+package com.springmvc.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,9 +7,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.sql.DataSource;
-import com.spring.model.Customer;
-import com.spring.util.DBConnection;
-import com.spring.util.DBConnection2;
+
+import com.springmvc.model.Customer;
+import com.springmvc.util.DBConnection;
+import com.springmvc.util.DBConnection2;
 
 public class CustomerDao implements CustomerDaoInterface
 {
@@ -19,7 +20,7 @@ public class CustomerDao implements CustomerDaoInterface
 		this.dataSource = dataSource;
 	}
 	
-	public void insert(Customer customer){
+	public void create(Customer customer){
 		
 		String sql = "INSERT INTO CUSTOMER " +
 				"(NAME, AGE) VALUES (?, ?)";

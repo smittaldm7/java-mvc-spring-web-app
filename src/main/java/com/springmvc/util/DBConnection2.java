@@ -1,4 +1,4 @@
-package com.spring.util;
+package com.springmvc.util;
 
 import java.sql.Connection;
 

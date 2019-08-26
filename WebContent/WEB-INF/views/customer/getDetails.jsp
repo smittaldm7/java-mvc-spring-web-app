@@ -9,16 +9,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello world!</h1>
+	<h1>Enter Id of customer you want to display</h1>
 
-	<P>The time on the server is ${serverTime}.</p>
-
-	<form action="user" method="post">
-		<input type="text" name="userName"><br> <input
-			type="submit" value="Login">
+	<form action="${pageContext.request.contextPath}/customer/displaydetails" method="post">
+		<input type="number" name="id"/><br>
+		<input type="submit" value="get details">
 	</form>
 </body>
 </html>
-
 
 

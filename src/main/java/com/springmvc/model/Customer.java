@@ -1,6 +1,9 @@
-package com.spring.model;
+package com.springmvc.model;
 
 public class Customer {
+	
+	public Customer()
+	{}
 	
 	public Customer(int custId, String name, int age) {
 		super();
@@ -19,10 +22,10 @@ public class Customer {
 	String name;
 	int age;
 	//getter and setter methods
-	public int getCustId() {
+	public int getId() {
 		return id;
 	}
-	public void setCustId(int custId) {
+	public void setId(int custId) {
 		this.id = custId;
 	}
 	public String getName() {
